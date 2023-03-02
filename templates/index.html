@@ -5,6 +5,14 @@
     <title>Football DB</title>
 </head>
 <body>
-<p></p>
+<h1>Wale DB Website for {{coursename}}</h1>
+<p>
+    <div>
+        {% for job in jobs %}
+            {% include 'db.html' %}
+        {% endfor %}
+    </div>
+</p>
+
 </body>
 </html>
