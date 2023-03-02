@@ -22,7 +22,7 @@ JOBS = [
     'location' : 'PH',
     'salary' : 'N2100'
     },
-{
+    {
     'id' : 4,
     'title' : 'Security Analyst',
     'location' : 'MNH',
