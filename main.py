@@ -18,7 +18,7 @@ JOBS = [
     },
     {
     'id' : 3,
-    'title' : 'Game Analyst',
+    'title' : 'Game Anal-yst',
     'location' : 'PH',
     'salary' : 'N2100'
     },
