@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Club DB</title>
+</head>
+<body>
+<h1>Wale DB Website for </h1>
+    <div>
+        <p>{% for row in rows %}
+          {{row['club_id']}}    |
+          {{row['club_name']}}  |
+          {{row['stadium_name']}}  |
+        </p>
+        {% endfor %}
+    </div>
+
+</body>
+</html>

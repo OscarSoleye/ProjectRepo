@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Football DB</title>
+</head>
+<body>
+<h1>Wale DB Website for {{coursename}}</h1>
+    <div>
+        <p>{% for row in rows %}    |
+        {{row['player_id']}}    |
+        {{row['name']}}    |
+        {{row['club_id']}}    |
+        {{row['current_club_name']}}    |
+        {{row['country_of_citizenship']}}    |
+        {{row['position']}}    |
+        {{row['foot']}}|</p>
+        {% endfor %}
+    </div>
+
+</body>
+</html>
