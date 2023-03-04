@@ -1,6 +1,5 @@
 import csv
 import sqlite3
-import pandas as pd
 
 # opening the connection to the database
 conn = sqlite3.connect('football_data.db')
