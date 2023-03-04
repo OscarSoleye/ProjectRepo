@@ -1,5 +1,3 @@
 Flask
 gunicorn
 pandas
-csv
-sqlite3
