@@ -15,18 +15,16 @@
             <th>current_club_name</th>
             <th>country_of_citizenship</th>
             <th>position</th>
-            <th>foot</th>
         </tr>
 
         <tr>
-        <td>{% for row in rows %}</td>
+        {% for row in rows %}
         <td>{{row['player_id']}}</td>
         <td>{{row['name']}}</td>
-        <td><a href="{{url_for('club_search',id=row['club_id'])}}">{{row['club_id']}}    |</a></td>
+        <td><a href="{{url_for('club_search',id=row['club_id'])}}">{{row['club_id']}}</a></td>
         <td>{{row['current_club_name']}}</td>
         <td>{{row['country_of_citizenship']}}</td>
         <td>{{row['position']}}</td>
-        <td>{{row['foot']}}</td>
         </tr>
         {% endfor %}
         </table>

@@ -34,9 +34,8 @@ with open('players.csv', newline="") as f:
         country_of_citizenship = row[4]
         date_of_birth = row[7]
         position = row[8]
-        foot = row[11]
 
-        cur.execute('INSERT INTO player_data VALUES (?,?,?,?,?,?,?,?)', (player_id, name, current_club_id, current_club_name, country_of_citizenship, date_of_birth, position, foot))
+        cur.execute('INSERT INTO player_data VALUES (?,?,?,?,?,?,?)', (player_id, name, current_club_id, current_club_name, country_of_citizenship, date_of_birth, position))
         conn.commit()
 print('database 1 parsed')
 
