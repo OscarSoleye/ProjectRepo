@@ -1,0 +1,11 @@
+* e618f84 : some database changes to make sure correct values are displayed
+* ae89e9d : some data base changes to that correct values are delayed
+* 41def14 : small uodates to html
+* 871fbe0 : created the football data and parsing files,
+* 1dac5d0 : created the football data and parsing files,
+* 357ecaa : created the football data and parsing files
+* 7409fb1 : l changes
+* 73abe3c : comitting and pushing for access to render
+* 7877466 : comitting and pushing for access to render
+* a0978f3 : by this point i have installed and run flask from the terminal in pycharm and can see hello world displayed on the browser. Committing to make sure everything is working fine
+* 16e0c08 : first commit
