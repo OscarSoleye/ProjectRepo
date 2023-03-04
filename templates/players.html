@@ -7,15 +7,29 @@
 <body>
 <h1>Wale DB Website for {{coursename}}</h1>
     <div>
-        <p>{% for row in rows %}    |
-        {{row['player_id']}}    |
-        {{row['name']}}    |
-        {{row['club_id']}}    |
-        {{row['current_club_name']}}    |
-        {{row['country_of_citizenship']}}    |
-        {{row['position']}}    |
-        {{row['foot']}}|</p>
+        <table>
+        <tr>
+            <th>player_id</th>
+            <th>name</th>
+            <th>club_id</th>
+            <th>current_club_name</th>
+            <th>country_of_citizenship</th>
+            <th>position</th>
+            <th>foot</th>
+        </tr>
+
+        <tr>
+        <td>{% for row in rows %}</td>
+        <td>{{row['player_id']}}</td>
+        <td>{{row['name']}}</td>
+        <td><a href="{{url_for('club_search',id=row['club_id'])}}">{{row['club_id']}}    |</a></td>
+        <td>{{row['current_club_name']}}</td>
+        <td>{{row['country_of_citizenship']}}</td>
+        <td>{{row['position']}}</td>
+        <td>{{row['foot']}}</td>
+        </tr>
         {% endfor %}
+        </table>
     </div>
 
 </body>

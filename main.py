@@ -26,6 +26,18 @@ def club():
         return render_template('clubs.html', rows=rows)
 
 
+@main.route('/clubs/<id>')
+def club_search(id):
+        # open the connection to the database
+        conn = sqlite3.connect('football_data.db')
+        conn.row_factory = sqlite3.Row
+        cur = conn.cursor()
+        cur.execute("select * from club_info where club_id = ?",(id,))
+        rows = cur.fetchall()
+        conn.close()
+        return render_template('clubs.html', rows=rows)
+
+
 
 @main.route('/players')
 def players():
