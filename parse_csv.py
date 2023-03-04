@@ -14,7 +14,7 @@ conn.execute('DROP TABLE IF EXISTS club_info')
 print('club info drop successful');
 
 # Create the table as it has been dropped
-conn.execute('CREATE TABLE player_data (player_id INTEGER PRIMARY KEY, name TEXT, club_id INTEGER, current_club_name TEXT, country_of_citizenship TEXT, date_of_birth TEXT, position TEXT,foot TEXT, FOREIGN KEY (club_id) REFERENCES club_info(club_id))')
+conn.execute('CREATE TABLE player_data (player_id INTEGER PRIMARY KEY, name TEXT, club_id INTEGER, current_club_name TEXT, country_of_citizenship TEXT, date_of_birth TEXT, position TEXT, FOREIGN KEY (club_id) REFERENCES club_info(club_id))')
 print('table created successfully');
 
 conn.execute('CREATE TABLE club_info (club_id INTEGER PRIMARY KEY, club_name TEXT,stadium_name TEXT )')
